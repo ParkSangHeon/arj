@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/arj/!svn/ver/31/ARCommonLib/src/com/ar/common/spec
+END
+SpecLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arj/!svn/ver/7/ARCommonLib/src/com/ar/common/spec/SpecLoader.java
+END
+SpecFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arj/!svn/ver/31/ARCommonLib/src/com/ar/common/spec/SpecFactory.java
+END
+Spec.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/arj/!svn/ver/7/ARCommonLib/src/com/ar/common/spec/Spec.java
+END
+SpecImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arj/!svn/ver/7/ARCommonLib/src/com/ar/common/spec/SpecImpl.java
+END

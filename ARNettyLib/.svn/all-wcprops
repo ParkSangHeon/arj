@@ -1,0 +1,21 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 18
+/svn/arj/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/arj/!svn/ver/30/ARNettyLib
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/arj/!svn/ver/11/ARNettyLib/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/arj/!svn/ver/11/ARNettyLib/.project
+END

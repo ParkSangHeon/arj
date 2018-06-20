@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Clients>
+    <client name="test-client" host="localhost" port="54000">
+		<setting>
+            <param name="tcpNoDelay">true</param>
+			<param name="timeout">5000</param>
+			<param name="keepAlive">true</param>
+			<param name="useThreadPool">true</param>
+			<param name="maxThreadCount">5</param>
+			<param name="useNIO">true</param>
+        </setting>
+        <pipeline>
+            <codec name="encoder" class="com.ar.netty.codec.spec.SpecEncoder"/>
+            <codec name="decoder" class="com.ar.netty.codec.spec.SpecDecoder"/>
+        </pipeline>
+        <handler class="test.com.ar.netty.server.handler.TestSpecHandler"/>        
+    </client>
+</Clients>

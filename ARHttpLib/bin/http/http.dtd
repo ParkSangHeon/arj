@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT routes (mapping*)>
+	<!ELEMENT mapping (service, parameters)>
+		<!ATTLIST mapping uri CDATA #REQUIRED>
+		<!ATTLIST mapping method (GET | POST | PUT | DELETE | JSON) #REQUIRED>
+		<!ELEMENT service EMPTY>
+			<!ATTLIST service class CDATA #REQUIRED>
+			<!ATTLIST service method CDATA #REQUIRED>
+		<!ELEMENT parameters (param*)>
+			<!ELEMENT param EMPTY>
+			<!ATTLIST param name CDATA #REQUIRED>
+			<!ATTLIST param type (String | Integer | Double | Boolean) #IMPLIED>
+			<!ATTLIST param required (true | false) #REQUIRED>

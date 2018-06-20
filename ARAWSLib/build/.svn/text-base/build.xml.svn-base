@@ -1,0 +1,45 @@
+<project name="ARAWSLib" default="dist" basedir="..">
+  <description>
+    Another Rainbow Amazon Web Service Library
+  </description>
+  <property name="src" location="src"/>
+  <property name="bin" location="bin"/>
+  <property name="config" location="config"/>
+  <property name="dist" location="dist"/>
+  <property name="lib" location="lib"/>
+  <property name="ar-common" location="/Users/kaori573/Documents/Workspace/ARJ/ARCommonLib"/>
+
+  <path id="class.path">
+    <pathelement path="${classpath}"/>
+    <fileset dir="${lib}">
+      <include name="**/*.jar"/>
+    </fileset>
+    <fileset dir="${ar-common}">
+        <include name="dist/ar-common.jar"/>
+    </fileset>
+  </path>
+
+  <target name="init">
+    <tstamp>
+      <format property="DSTAMP" pattern="yyyyMMddhhmmss"/>
+    </tstamp>
+    <mkdir dir="${bin}"/>
+  </target>
+
+  <target name="compile" depends="clean, init" description="Compile Source">
+    <javac srcdir="${src}" destdir="${bin}" encoding="UTF-8" target="1.6">
+      <classpath refid="class.path"/>
+    </javac>
+  </target>
+
+  <target name="dist" depends="compile" description="Create Jar">
+    <mkdir dir="${dist}"/>
+    <delete file="${dist}/ar-aws.jar"/>
+    <jar jarfile="${dist}/ar-aws.jar" basedir="${bin}"/>
+  </target>
+
+  <target name="clean">
+    <delete dir="${bin}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>

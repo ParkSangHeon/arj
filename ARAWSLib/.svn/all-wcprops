@@ -1,0 +1,21 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 18
+/svn/arj/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/arj/!svn/ver/40/ARAWSLib
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/arj/!svn/ver/6/ARAWSLib/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/arj/!svn/ver/6/ARAWSLib/.project
+END

@@ -1,0 +1,14 @@
+package com.ar.common.constant;
+
+/**********************************
+ * <pre>
+ * 기본적으로 사용되는 상수값을 정의한다.
+ * </pre>
+ * @author Bak Sang Heon
+ *
+ **********************************/
+public class ARConst {
+
+	/* Spec */
+	public static final String SPEC_PATH = "com.ar.common.spec.path";
+} // class ARConst

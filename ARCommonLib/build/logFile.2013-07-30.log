@@ -1,0 +1,12 @@
+362  [main] DEBUG Test Logger - Logback Test!!!
+455  [main] INFO  Test Logger - Logback Test!!!
+366  [main] DEBUG LogbackTest - [1323900765][LogbackTest]Logback Test!!!
+380  [main] INFO  LogbackTest - [1323900765][LogbackTest]Logback Test!!!
+332  [main] DEBUG LogbackTest - [722090788] Logback Test!!!
+347  [main] INFO  LogbackTest - [722090788] Logback Test!!!
+462  [main] DEBUG LogbackTest [1323900765] Logback Test!!!
+554  [main] INFO  LogbackTest [1323900765] Logback Test!!!
+497  [main] DEBUG LogbackTest [722090788] Logback Test!!!
+605  [main] INFO  LogbackTest [722090788] Logback Test!!!
+399  18:35:20.507 [main] DEBUG LogbackTest [690820521] Logback Test!!!
+425  18:35:20.533 [main] INFO  LogbackTest [690820521] Logback Test!!!

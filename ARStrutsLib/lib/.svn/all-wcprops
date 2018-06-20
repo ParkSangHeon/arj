@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/arj/!svn/ver/48/ARStrutsLib/lib
+END
+tiles-core-2.0.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/arj/!svn/ver/48/ARStrutsLib/lib/tiles-core-2.0.6.jar
+END
+tiles-api-2.0.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/arj/!svn/ver/48/ARStrutsLib/lib/tiles-api-2.0.6.jar
+END
+struts2-core-2.3.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/arj/!svn/ver/48/ARStrutsLib/lib/struts2-core-2.3.4.jar
+END
+ognl-3.0.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/arj/!svn/ver/48/ARStrutsLib/lib/ognl-3.0.5.jar
+END
+xwork-core-2.3.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/arj/!svn/ver/48/ARStrutsLib/lib/xwork-core-2.3.4.jar
+END

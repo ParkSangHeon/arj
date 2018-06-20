@@ -1,0 +1,21 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 18
+/svn/arj/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/arj/!svn/ver/19/ARMongoLib
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/arj/!svn/ver/9/ARMongoLib/.classpath
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/arj/!svn/ver/9/ARMongoLib/.project
+END

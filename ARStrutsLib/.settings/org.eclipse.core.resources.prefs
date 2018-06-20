@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//src/com/ar/web/struts/action/ARAction.java=UTF-8
+encoding//src/com/ar/web/struts/interceptor/ParameterInterceptor.java=UTF-8
+encoding//src/com/ar/web/struts/interceptor/SessionInterceptor.java=UTF-8
+encoding//src/com/ar/web/struts/result/CustomTilesResult.java=UTF-8
+encoding//src/com/ar/web/struts/result/ExcelDownResult.java=UTF-8
+encoding//src/com/ar/web/struts/result/JsonActionResult.java=UTF-8

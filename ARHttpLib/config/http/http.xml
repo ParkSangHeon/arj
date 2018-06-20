@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE routes PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "/Users/kaori573/Documents/Workspace/movie_server/MasterNode/bin/http/api/http.dtd">
+<routes>
+    <!-- 인코딩 요청. -->
+    <mapping uri="/request/encoding" method="JSON">
+        <service class="com.ar.movier.master.encoding.service.EncodingHTTPRequestReceiveService" method="requestEncoding"/>
+        <parameters>
+            <param name="serviceId" 	type="String"	required="true"/>
+            <param name="type"          type="String"   required="true"/>
+            <param name="fileId"        type="String"   required="true"/>
+            <param name="fileKey"       type="String"   required="true"/>
+        </parameters>
+    </mapping>
+    
+</routes>

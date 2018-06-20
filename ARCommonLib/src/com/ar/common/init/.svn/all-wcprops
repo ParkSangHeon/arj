@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/arj/!svn/ver/22/ARCommonLib/src/com/ar/common/init
+END
+InitParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arj/!svn/ver/22/ARCommonLib/src/com/ar/common/init/InitParser.java
+END
+InitException.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arj/!svn/ver/7/ARCommonLib/src/com/ar/common/init/InitException.java
+END
+Initializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arj/!svn/ver/7/ARCommonLib/src/com/ar/common/init/Initializer.java
+END
+GlobalInit.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arj/!svn/ver/22/ARCommonLib/src/com/ar/common/init/GlobalInit.java
+END
+InitConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arj/!svn/ver/22/ARCommonLib/src/com/ar/common/init/InitConst.java
+END

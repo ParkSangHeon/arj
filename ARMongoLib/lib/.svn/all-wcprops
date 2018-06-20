@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/arj/!svn/ver/9/ARMongoLib/lib
+END
+morphia-0.98.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/arj/!svn/ver/9/ARMongoLib/lib/morphia-0.98.jar
+END
+mongo-2.10.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/arj/!svn/ver/9/ARMongoLib/lib/mongo-2.10.1.jar
+END
+morphia-logging-slf4j-0.99.jar
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/arj/!svn/ver/9/ARMongoLib/lib/morphia-logging-slf4j-0.99.jar
+END
+morphia-0.98-validation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/arj/!svn/ver/9/ARMongoLib/lib/morphia-0.98-validation.jar
+END

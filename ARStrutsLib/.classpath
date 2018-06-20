@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="lib/ognl-3.0.5.jar"/>
+	<classpathentry kind="lib" path="lib/struts2-core-2.3.4.jar"/>
+	<classpathentry kind="lib" path="lib/tiles-api-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/tiles-core-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/xwork-core-2.3.4.jar"/>
+	<classpathentry kind="lib" path="/Users/kaori573/Documents/server/apache-tomcat-7.0.35/lib/servlet-api.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ARCommonLib"/>
+	<classpathentry kind="lib" path="lib/commons-jexl-2.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/jxls-core-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/jxls-reader-1.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="lib/poi-ooxml-schemas-3.8-20120326.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/arj/!svn/ver/44/ARBatchLib/src/com/ar/batch
+END
+StartBatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/arj/!svn/ver/44/ARBatchLib/src/com/ar/batch/StartBatch.java
+END
+BatchScheduler.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arj/!svn/ver/44/ARBatchLib/src/com/ar/batch/BatchScheduler.java
+END
+ScheduleLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arj/!svn/ver/44/ARBatchLib/src/com/ar/batch/ScheduleLoader.java
+END
+ScheduleManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arj/!svn/ver/44/ARBatchLib/src/com/ar/batch/ScheduleManager.java
+END
+BatchConst.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/arj/!svn/ver/44/ARBatchLib/src/com/ar/batch/BatchConst.java
+END

@@ -1,0 +1,34 @@
+package com.ar.web.struts.action;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ModelDriven;
+import com.opensymphony.xwork2.Preparable;
+
+/******************************************
+ * <pre>
+ * Struts2의 액션 구성을 위한 최상위 액션 클래스.
+ * </pre>
+ * @author Bak Sang Heon
+ *
+ ******************************************/
+public abstract class ARAction implements ModelDriven<Map<String, Object>>, Preparable, SessionAware {
+	
+	protected Map<String, Object> _params;
+	protected Map<String, Object> _session;
+	
+	@Override
+	public Map<String, Object> getModel() {
+		if (this._params == null) this._params = new HashMap<String, Object>();
+		return this._params;
+	} // getModel()
+
+	@Override
+	public void setSession(Map<String, Object> session) {
+		this._session = session;
+	} // setSession()
+	
+} // ARAction

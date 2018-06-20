@@ -1,0 +1,8 @@
+# Spec
+com.ar.common.spec.path=spec/Spec.xml
+
+# Server
+com.ar.common.netty.server.path=server/Server.xml
+
+# Client
+com.ar.common.netty.client.path=client/Client.xml

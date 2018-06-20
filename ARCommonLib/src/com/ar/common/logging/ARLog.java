@@ -1,0 +1,119 @@
+package com.ar.common.logging;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
+
+/********************************
+ * <pre>
+ * 메세지 로깅처리를 담당하는 클래스
+ * </pre>
+ * @author Bak Sang Heon
+ *
+ ********************************/
+public class ARLog {
+	
+	private Logger logger;
+	/*************
+	 * <pre>
+	 * 생성자
+	 * </pre>
+	 *************/
+	private ARLog(Logger logger) {
+		this.logger = logger;
+	} // Constructor
+	
+	/**************************************
+	 * <pre>
+	 * 해당하는 명칭의 Logger인스턴스를 반환한다.
+	 * </pre>
+	 * @param loggerName
+	 * @return
+	 **************************************/
+	public static ARLog getLogger(String loggerName) {
+		Logger logger = LoggerFactory.getLogger(loggerName);
+		return new ARLog(logger);
+	} // getLogger()
+	
+	/********************************************
+	 * <pre>
+	 * 해당하는 클래스명의 Logger인스턴스를 반환한다.
+	 * </pre>
+	 * @param clazz
+	 * @return
+	 ********************************************/
+	public static ARLog getLogger(Class<?> clazz) {
+		String name = clazz.getName();
+		String[] tokens = name.split("[.]");
+		return getLogger(tokens[tokens.length - 1]);
+	} // getLogger()
+	
+	/**********************************
+	 * <pre>
+	 * 출력 형식에 맞춰 메세지를 변경한다.
+	 * </pre>
+	 * @param msg
+	 * @return
+	 **********************************/
+	private String createMessage(String msg) {
+		int hashCode = Thread.currentThread().hashCode();
+		StringBuilder builder = new StringBuilder();
+		//builder.append("[").append(hashCode).append("][").append(this.logger.getName()).append("]").append(msg);
+		builder.append("[").append(hashCode).append("] ").append(msg);
+		return builder.toString();
+	} // createMessage()
+	
+	public void debug(String msg) {
+		this.logger.debug(createMessage(msg));
+	} // debug()
+	public void debug(Throwable e) {
+		this.logger.debug(createMessage("DEBUG"), e);
+	} // debug()
+	public void debug(String msg, Throwable e) {
+		this.logger.debug(createMessage(msg), e);
+	} // debug()
+	public void debug(String msg, Object... obj) {
+		this.logger.debug(createMessage(msg), obj);
+	} // debug()
+	
+	public void info(String msg) {
+		this.logger.info(createMessage(msg));
+	} // info()
+	public void info(Throwable e) {
+		this.logger.info(createMessage("INFO"), e);
+	} // info()
+	public void info(String msg, Throwable e) {
+		this.logger.info(createMessage(msg), e);
+	} // info()
+	public void info(String msg, Object... obj) {
+		this.logger.info(createMessage(msg), obj);
+	} // info()
+	
+	public void warn(String msg) {
+		this.logger.warn(createMessage(msg));
+	} // warn()
+	public void warn(Throwable e) {
+		this.logger.warn(createMessage("WARNING"), e);
+	} // warn()
+	public void warn(String msg, Throwable e) {
+		this.logger.warn(createMessage(msg), e);
+	} // warn()
+	public void warn(String msg, Object... obj) {
+		this.logger.warn(msg, obj);
+	} // warn()
+	
+	public void error(String msg) {
+		this.logger.error(createMessage(msg));
+	} // error()
+	public void error(Throwable e) {
+		this.logger.error(createMessage("ERROR"), e);
+	} // error()
+	public void error(String msg, Throwable e) {
+		this.logger.error(createMessage(msg), e);
+	} // error()
+	public void error(String msg, Object... obj) {
+		this.logger.error(msg, obj);
+	} // error()
+		
+} // class ARLog

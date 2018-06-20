@@ -1,0 +1,66 @@
+<project name="ARCommonLib" default="dist" basedir="..">
+  <description>
+    Another Rainbow Common Library
+  </description>
+  <property name="src" location="src"/>
+  <property name="test" location="test"/>
+  <property name="bin" location="bin"/>
+  <property name="config" location="config"/>
+  <property name="dist" location="dist"/>
+  <property name="lib" location="lib"/>
+
+  <path id="class.path">
+    <pathelement path="${classpath}"/>
+    <fileset dir="${lib}">
+      <include name="**/*.jar"/>
+    </fileset>
+  </path>
+
+  <target name="init">
+    <tstamp>
+      <format property="DSTAMP" pattern="yyyyMMddhhmmss"/>
+    </tstamp>
+    <mkdir dir="${bin}"/>
+  </target>
+
+  <target name="compile" depends="clean, init" description="Compile Source">
+    <javac srcdir="${src}" destdir="${bin}" encoding="UTF-8" target="1.6">
+      <classpath refid="class.path"/>
+    </javac>
+    <javac srcdir="${test}" destdir="${bin}" encoding="UTF-8" target="1.6">
+        <classpath refid="class.path"/>
+    </javac>
+    
+  </target>
+
+  <target name="dist" depends="compile" description="Create Jar">
+    <mkdir dir="${dist}"/>
+    <delete file="${dist}/ar-common.jar"/>
+    <jar jarfile="${dist}/ar-common.jar" basedir="${bin}"/>
+  </target>
+  
+  <target name="copy-config">
+    <copy todir="${bin}">
+      <fileset dir="${config}"/>
+    </copy>
+  </target>
+  
+  <target name="test" depends="compile, copy-config, test_run">
+    <mkdir dir="${bin}"/>
+  </target>
+  
+  <target name="test_run" description="Run Test Class">
+      <echo>########################## RUN TEST ##########################</echo>
+      <java classname="com.ar.common.test.TestRunner">
+          <classpath>
+              <pathelement location="${bin}"/>
+          </classpath>
+          <classpath refid="class.path"/>
+      </java>
+  </target>
+
+  <target name="clean">
+    <delete dir="${bin}"/>
+    <delete dir="${dist}"/>
+  </target>
+</project>
